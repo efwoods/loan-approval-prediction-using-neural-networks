@@ -1,0 +1,215 @@
+Hello, everyone, and welcome to this new hands on project
+on bank loan approval prediction.
+Using artificial neural networks, artificial intelligence
+and machine learning have been transforming the banking
+industry in many aspects, such as automatic fraud detection,
+bank customers, segmentation and robotic process automation.
+In this hands on project, we will assume that you work as
+a data scientist at the bank and the bank management team
+would like Toa build and train a simple, deep neural network
+model to predict the likelihood off customers buying personal
+loans based on their features, such as their age, experience,
+income, family education and credit card information as well.
+You guys can add this project to your portfolio of projects,
+which is essential for your next job interview.
+And you can simply apply this project to predict customer's
+credit worthiness and also increase the effectiveness
+off the bank Marketing strategy.
+For those of you guys who are new to Rhyme, Rhyme is
+an online platform for hands on projects creation.
+It will allow you guys to learn by doing so on the right hand
+side. You should see the recorded videos.
+You can pause the videos at any time you want,
+and on the left hand side, you will see rhymes.
+Virtual machine.
+Simply put, it's a pre configured cloud desktop with all
+the software preinstalled and ready for you to use.
+So you don't have to worry about any installation issues
+or any problems.
+Just go ahead, follow along and code with me.
+Please note that this project is a beginners to intermediate
+level project and it has some prerequisites.
+It requires basic python programming and basic knowledge
+off machine learning as well.
+All right, so let's go ahead and get started.
+So you guys should be able to see a Jupiter notebook here
+entitled bank loan Approval using artificial neural networks.
+And you should be able to also see the C S V file, which is
+the data that we are going to use in this project.
+And it's entitled universal bank dot C s V.
+Please go ahead and click on the Jupiter notebook and it
+should open separately here in a new tab.
+As you guys can see here, it might take, I would say a couple
+of seconds for it to load, but essentially, here
+in this Jupiter notebook, I included all the information that
+you will need in one place, so you should be able to see all
+the slides, all the codes, all the outcome or the outputs
+from all the codes.
+I added.
+Also, extensive number off many challenges.
+So there's many challenge pretty much in every task, and they
+also included the solutions for the many challenges as well.
+So let's go ahead and actually walk you through it.
+So as you guys can see here here again, I have my all
+the slides are embedded in here.
+So and you will also notice that we divided the project
+into a series off manageable tasks.
+So in Task Number One, for example, we will understand
+the problem statement and business case.
+And then in task number two, we will import our data sets
+and our libraries.
+And then as you scroll down here, you should be able to see
+as I mentioned.
+Also, there is many challenges.
+So I'm going to ask you guys to please pause the video
+an attempt to solve the many challenges on your own.
+And then afterwards I will include a detailed video
+explanation off the mini challenge, and I also included
+the many challenge solutions for you guys here at the end
+of the notebook.
+So if you scroll down at the end of the notebook, you
+should be able here to see all the many challenge solutions.
+And, um, I highly recommend that you guys do not check
+these solutions and attempt to solve the many challenge
+on your own, and that will help you guys, like, you know,
+practice and learn by doing.
+And that's the objective, essentially off using Rhyme
+and using these hands on projects.
+So as I mentioned Task number three, who will perform
+exploratory data analysis in Task number four, we
+will perform data visualization.
+And then again, you should be able to see a lot of many
+challenges along the way.
+So there is a mini challenge actually coming up here.
+So there is a mini challenge here.
+Many challenge number three on there in task five.
+We will prepare the data before training our model.
+And then in task number six, we will understand the theory
+and intuition behind artificial neural networks.
+And how do we build them and how do we train them as well?
+And if you scroll down and task number seven, we will learn
+how to build a simple multi layer artificial neural network.
+And then, in Task number eight, we will compile and train our
+deep learning model.
+And finally, in Task number nine, we will assess
+the performance off the train model.
+Okay, and that should simply conclude our project.
+So let's go up and cover task number one.
+Okay, So as I mentioned Task and test number one, we
+will cover the problem statement and business case.
+So in this hands on project, we will assume that you work as
+a data scientist at the bank.
+And also, as I mentioned, the bank management team would
+like toa build, train and deploy a simple, deep neuron
+network model that will be able to predict the likelihood
+off liability customers.
+And when we say liability customers, these are depositor
+customers.
+These are people or customers who deposit money in the bank.
+And simply the bank would like to take identify
+those customers and kind of, you know, like like make them
+by personal loans.
+So the idea here is to try to essentially make money.
+We want them to issue them loans so the bank would be able
+to charge them interest and The point is, we wanted to target
+those customers.
+So to do that, we want to know their age, their experience,
+their income level, their location, family education level,
+existing mortgage if they have an existing mortgage
+with the bank or not.
+And we also want to know if they have a credit card with our
+bank also or not, because all these factors play a big role
+in the acceptance off customers.
+To these, I would say marketing strategies, which is again
+asking them toe by our personal loans.
+So there is a company or a startup named Lindo included
+a link here Thio the website and it's actually leading
+startup that uses advanced machine learning strategies
+to analyze over 12,000 features from various customers.
+And the idea here is that we wanted to predict the customer's
+credit worthiness so it actually go beyond the banking
+information so you can look at social media account use geo
+location, data, tons of information that can kind of tell you
+if this customer has a high credit worthiness or not.
+And essentially this guy, you know, like in the US and Canada,
+there is credit score, and this kind of you know,
+like a number that, like banks, could use toe identify
+the credit worthiness.
+However, for I would say, growing growing countries,
+these credit scores, I would say I'm not readily available.
+And that's where Lindo machine learning and artificial
+intelligence algorithm actually worked really well.
+To try to analyze all that data and provide that information
+toe banks to get an idea off the credit worthiness
+off various customers.
+So the long story short, we are going to train on artificial
+Neural network to take in all these features such as age,
+experience, income, location and essentially here will tell
+me if that customer is going to accept that loan or not.
+Okay, so it's essentially classifications problem.
+It's either yes or no.
+All right, Okay, so as I mentioned, most, bank customers are
+currently depositors, and the bank would like to target some
+of these customers an issue to them personal loans,
+and the bank would like to retain those depositors.
+So we actually wanted to keep those good customers to us
+and kind of sell them more products like convert them
+to personal loan customers, and that obviously
+will contribute to the bank, bottom line and the bank issued
+already a marketing campaign in the past, and this marketing
+campaign has resulted in 9% success rate.
+And what the bank management team would like to do is would
+like to analyze this campaign.
+We just want to know which off these customers actually
+accepted our marketing strategy.
+Like, who are these 9% people?
+What are their features?
+You know, like and and once we train that a. I model to kind
+of learn all the features for those customers who accepted
+our person alone offer before that will help us in the future.
+Tow target, you know, customers with similar features.
+So here are somebody off the features.
+So we have I D.
+Which is a customer, I d.
+We have the age.
+We have the experience number of years professionally that
+they worked, um, that obviously affect their decision making
+process.
+Their annual income, their ZIP code, the location, of course,
+affect their acceptance off these personal loans.
+We have their family the size of the family.
+We have their C C average, which is the average spending
+on credit card per month.
+We have the education level, we have the mortgage.
+If we have the value of their house mortgage.
+We have personal loans, and that's essentially our I
+would say the target variable.
+That's what we're trying to predict.
+So we're essentially trying to predict whether the customer
+will accept our personal loan offer to them or not.
+That's the idea.
+We also have securities account if the customer have
+securities, account with the bank or not.
+We also have the 100 account, which is certificate
+off deposit account with the bank.
+We also want to know if the customer use Internet banking
+facilities or not.
+And that's the online feature.
+And also we have the credit card feature, which is not
+the customer use credit card issued by Universal Bank or not.
+All right, okay.
+So a little bit about myself.
+My name is Ryan Ahmad.
+I'm on edge on professor and online instructor.
+I'm passionate about artificial intelligence.
+Machine learning and electric vehicles on have taught
+over 200,000 students globally, and I hold an MBA PhD
+and the masters of applied science as well.
+Okay, Alright.
+So that's all I have for task number one.
+I hope you guys enjoyed it in test number two.
+Let's go ahead and start coding.
+Together we will import our data sets and our libraries
+and we'll get started with our project.
+I hope you guys enjoy this lecture and see you in the next
+one.
