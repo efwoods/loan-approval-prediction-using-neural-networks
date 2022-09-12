@@ -6,9 +6,9 @@ Build a deep neural networks to classify bank customers
 ## Project Structure
 The hands-on project on Bank Loan Approval Prediction Using Artificial Neural Nets is divided into following tasks:
 
-1. [ ] Task 1: [Understand the problem statement and business case](./text/Understand%20the%20Problem%20Statement%20and%20Business%20Case_transcript.txt)
-2. [ ] Task 2: Import Datasets and Libraries
-3. [ ] Task 3: Exploratory Data Analysis
+1. [x] Task 1: [Understand the problem statement and business case](./text/Understand%20the%20Problem%20Statement%20and%20Business%20Case_transcript.txt)
+2. [x] Task 2: Import Datasets and Libraries
+3. [x] Task 3: Exploratory Data Analysis
 4. [ ] Task 4: Perform Data Visualization
 5. [ ] Task 5: Prepare the data to feed the model
 6. [ ] Task 6: Understand the theory and intuition behind Artificial Neural Networks
