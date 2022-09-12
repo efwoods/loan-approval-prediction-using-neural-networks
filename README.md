@@ -1,4 +1,5 @@
 # loan-approval-prediction-using-neural-networks
+Build a deep neural networks to classify bank customers
  
 [Loan Approval Prediction Using Neural Networks](https://www.coursera.org/learn/loan-approval-prediction-using-neural-networks/supplement/f2tC5/project-based-course-overview)
 
